@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Prime Number Program with Output</title>
+</head>
+<body>
+
+<h1>Java Prime Number Program</h1>
+
+<pre>
+import java.util.Scanner;
+
+public class PrimeNumber {
+    public static void main(String[] args) {
+        int n, i, count = 0;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+        n = sc.nextInt();
+
+        for(i = 1; i <= n; i++) {
+            if(n % i == 0) {
+                count++;
+            }
+        }
+
+        if(count == 2)
+            System.out.println("Prime Number");
+        else
+            System.out.println("Not Prime Number");
+    }
+}
+</pre>
+
+<h2>Output</h2>
+<pre>
+Enter a number:
+7
+Prime Number
+</pre>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
